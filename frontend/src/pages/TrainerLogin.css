@@ -1,0 +1,157 @@
+.trainer-login-page {
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    var(--primary-bg) 0%,
+    var(--secondary-bg) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.trainer-login-container {
+  background-color: var(--secondary-bg);
+  border-radius: 20px;
+  padding: 48px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 106, 0, 0.2);
+}
+
+.trainer-login-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.trainer-login-title {
+  font-size: 2.5rem;
+  color: var(--text);
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.trainer-login-subtitle {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.trainer-login-form {
+  width: 100%;
+}
+
+.error-message {
+  background-color: #fee;
+  color: #c33;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  border: 1px solid #fcc;
+  font-size: 0.95rem;
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #ff6b6b;
+}
+
+.form-input::placeholder {
+  color: #aaa;
+}
+
+.trainer-login-submit-button {
+  width: 100%;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 16px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 8px;
+}
+
+.trainer-login-submit-button:hover:not(:disabled) {
+  background-color: #ff5252;
+}
+
+.trainer-login-submit-button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.form-footer {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.back-link-button {
+  background: none;
+  border: none;
+  color: #ff6b6b;
+  cursor: pointer;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  margin-bottom: 12px;
+}
+
+.back-link-button:hover {
+  color: #ff5252;
+  text-decoration: underline;
+}
+
+.signup-prompt {
+  color: #666;
+  font-size: 0.95rem;
+  margin-top: 16px;
+}
+
+.signup-link {
+  color: #ff6b6b;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.signup-link:hover {
+  color: #ff5252;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .trainer-login-container {
+    padding: 32px 24px;
+  }
+
+  .trainer-login-title {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,162 @@
+.user-login-page {
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    var(--primary-bg) 0%,
+    var(--secondary-bg) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.user-login-container {
+  background-color: var(--secondary-bg);
+  border-radius: 20px;
+  padding: 48px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 106, 0, 0.2);
+}
+
+.user-login-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.user-login-title {
+  font-size: 2.5rem;
+  color: var(--text);
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.user-login-subtitle {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.user-login-form {
+  width: 100%;
+}
+
+.error-message {
+  background-color: rgba(255, 68, 68, 0.1);
+  color: #ff6666;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  border: 1px solid rgba(255, 68, 68, 0.3);
+  font-size: 0.95rem;
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  font-family: inherit;
+  background-color: var(--primary-bg);
+  color: var(--text);
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--accent);
+  background-color: rgba(18, 18, 18, 0.8);
+}
+
+.form-input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.login-submit-button {
+  width: 100%;
+  background-color: var(--accent);
+  color: var(--text);
+  border: none;
+  padding: 16px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 8px;
+}
+
+.login-submit-button:hover:not(:disabled) {
+  background-color: var(--hover);
+  transform: translateY(-2px);
+}
+
+.login-submit-button:disabled {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: not-allowed;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.form-footer {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.back-link-button {
+  background: none;
+  border: none;
+  color: var(--accent);
+  cursor: pointer;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  margin-bottom: 12px;
+}
+
+.back-link-button:hover {
+  color: var(--hover);
+  text-decoration: underline;
+}
+
+.signup-prompt {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.95rem;
+  margin-top: 16px;
+}
+
+.signup-link {
+  color: var(--accent);
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.signup-link:hover {
+  color: var(--hover);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .user-login-container {
+    padding: 32px 24px;
+  }
+
+  .user-login-title {
+    font-size: 2rem;
+  }
+}
