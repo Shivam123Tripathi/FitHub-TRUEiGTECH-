@@ -190,10 +190,16 @@ const TrainerDashboard = () => {
                   <span className="plan-duration">{plan.duration} days</span>
                 </div>
                 <div className="plan-actions">
-                  <button onClick={() => openEditModal(plan)} className="edit-btn">
+                  <button
+                    onClick={() => openEditModal(plan)}
+                    className="edit-btn"
+                  >
                     Edit
                   </button>
-                  <button onClick={() => deletePlan(plan.id)} className="delete-btn">
+                  <button
+                    onClick={() => deletePlan(plan.id)}
+                    className="delete-btn"
+                  >
                     Delete
                   </button>
                 </div>

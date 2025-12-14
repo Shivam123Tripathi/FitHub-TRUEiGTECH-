@@ -1,16 +1,13 @@
--- FitPlanHub Database Setup Script
--- Run this in MySQL Workbench to set up the database
 
--- Create the database
+
+-- Creating the database
 CREATE DATABASE IF NOT EXISTS fitplanhub;
 
--- Use the database
+-- Sertting the the database
 USE fitplanhub;
 
--- Note: Tables will be auto-created by Spring Boot JPA when the application starts
--- with hibernate.ddl-auto=update setting
 
--- However, if you want to create them manually or verify structure, here are the table definitions:
+--
 
 -- Users Table
 CREATE TABLE IF NOT EXISTS users (
@@ -42,23 +39,21 @@ CREATE TABLE IF NOT EXISTS trainers (
     updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 
--- Create indexes for better query performance
+-- Creatted indexes for better query performance
 CREATE INDEX idx_users_email ON users(email);
 CREATE INDEX idx_trainers_email ON trainers(email);
 
--- Verify tables were created
+
 SHOW TABLES;
 
--- Check users table structure
+
 DESCRIBE users;
 
--- Check trainers table structure
+
 DESCRIBE trainers;
 
 -- Sample queries to view data after signup/login
--- SELECT * FROM users;
--- SELECT * FROM trainers;
+-- SELECT * FROM users; only users
+-- SELECT * FROM trainers; only trainers
 
--- Query to verify BCrypt hashed passwords (should see long hashed strings)
--- SELECT id, email, LEFT(password, 20) as password_preview, role FROM users;
--- SELECT id, email, LEFT(password, 20) as password_preview, role FROM trainers;
+

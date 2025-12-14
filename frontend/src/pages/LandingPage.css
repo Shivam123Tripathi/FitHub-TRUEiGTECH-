@@ -4,8 +4,8 @@
 
 /* Navigation Bar */
 .navbar {
-  background-color: var(--secondary-bg);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  background-color: var(--bg-secondary);
+  box-shadow: 0 2px 10px rgba(251, 192, 45, 0.2);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -29,7 +29,7 @@
 
 .navbar-login-btn {
   background-color: var(--accent);
-  color: var(--text);
+  color: var(--text-primary);
   border: none;
   padding: 10px 30px;
   font-size: 1rem;
@@ -37,21 +37,23 @@
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(251, 192, 45, 0.3);
 }
 
 .navbar-login-btn:hover {
-  background-color: var(--hover);
+  background-color: var(--accent-hover);
   transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(251, 192, 45, 0.4);
 }
 
 /* Hero Section */
 .hero-section {
   background: linear-gradient(
     135deg,
-    var(--primary-bg) 0%,
-    var(--secondary-bg) 100%
+    var(--bg-primary) 0%,
+    var(--bg-secondary) 100%
   );
-  color: var(--text);
+  color: var(--text-primary);
   padding: 80px 20px;
   min-height: 600px;
   display: flex;
@@ -76,18 +78,19 @@
   font-weight: 800;
   line-height: 1.2;
   margin-bottom: 24px;
+  color: #000000;
 }
 
 .hero-description {
   font-size: 1.2rem;
   line-height: 1.6;
   margin-bottom: 32px;
-  opacity: 0.95;
+  color: var(--text-secondary);
 }
 
 .cta-button {
   background-color: var(--accent);
-  color: var(--text);
+  color: var(--text-primary);
   border: none;
   padding: 16px 48px;
   font-size: 1.1rem;
@@ -95,13 +98,13 @@
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(255, 106, 0, 0.4);
+  box-shadow: 0 4px 15px rgba(251, 192, 45, 0.4);
 }
 
 .cta-button:hover {
-  background-color: var(--hover);
+  background-color: var(--accent-hover);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(255, 106, 0, 0.6);
+  box-shadow: 0 6px 20px rgba(251, 192, 45, 0.5);
 }
 
 .hero-image-placeholder {
@@ -112,8 +115,8 @@
   justify-content: center;
   animation: fadeInRight 0.8s ease-out;
   overflow: hidden;
-  box-shadow: 0 10px 40px rgba(255, 106, 0, 0.4);
-  border: 3px solid rgba(255, 106, 0, 0.5);
+  box-shadow: 0 10px 40px rgba(251, 192, 45, 0.3);
+  border: 3px solid rgba(251, 192, 45, 0.5);
   position: relative;
 }
 
@@ -142,13 +145,13 @@
 
 .placeholder-content p {
   font-size: 1.2rem;
-  opacity: 0.8;
+  color: var(--text-secondary);
 }
 
 /* Popular Plans Section */
 .popular-plans-section {
   padding: 80px 20px;
-  background-color: var(--primary-bg);
+  background-color: var(--bg-primary);
 }
 
 .section-container {
@@ -160,7 +163,7 @@
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 60px;
-  color: var(--text);
+  color: var(--text-primary);
   font-weight: 700;
 }
 
@@ -171,29 +174,29 @@
 }
 
 .plan-card {
-  background: var(--secondary-bg);
+  background: var(--bg-secondary);
   padding: 32px;
   border-radius: 15px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 6px rgba(251, 192, 45, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid rgba(255, 106, 0, 0.1);
+  border: 1px solid rgba(251, 192, 45, 0.3);
 }
 
 .plan-card:hover {
   transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 12px 24px rgba(255, 106, 0, 0.3);
+  box-shadow: 0 12px 24px rgba(251, 192, 45, 0.3);
   border-color: var(--accent);
 }
 
 .plan-title {
   font-size: 1.5rem;
-  color: var(--text);
+  color: var(--text-primary);
   margin-bottom: 16px;
   font-weight: 600;
 }
 
 .plan-description {
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--text-secondary);
   line-height: 1.6;
   margin-bottom: 20px;
   min-height: 60px;
@@ -204,7 +207,7 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 16px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(251, 192, 45, 0.3);
 }
 
 .plan-price {
@@ -215,7 +218,7 @@
 
 .plan-duration {
   background-color: var(--accent);
-  color: var(--text);
+  color: var(--text-primary);
   padding: 6px 16px;
   border-radius: 20px;
   font-size: 0.9rem;
@@ -225,7 +228,7 @@
 /* Features Section */
 .features-section {
   padding: 80px 20px;
-  background-color: var(--secondary-bg);
+  background-color: var(--bg-secondary);
 }
 
 .features-grid {
@@ -235,18 +238,18 @@
 }
 
 .feature-card {
-  background-color: var(--primary-bg);
+  background-color: var(--bg-primary);
   padding: 32px;
   border-radius: 15px;
   text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 4px rgba(251, 192, 45, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid rgba(255, 106, 0, 0.1);
+  border: 1px solid rgba(251, 192, 45, 0.3);
 }
 
 .feature-card:hover {
   transform: translateY(-5px) scale(1.02);
-  box-shadow: 0 8px 16px rgba(255, 106, 0, 0.3);
+  box-shadow: 0 8px 16px rgba(251, 192, 45, 0.3);
   border-color: var(--accent);
 }
 
@@ -257,13 +260,13 @@
 
 .feature-title {
   font-size: 1.3rem;
-  color: var(--text);
+  color: var(--text-primary);
   margin-bottom: 12px;
   font-weight: 600;
 }
 
 .feature-description {
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--text-secondary);
   line-height: 1.6;
   font-size: 0.95rem;
 }
@@ -271,7 +274,7 @@
 /* About Section */
 .about-section {
   padding: 80px 20px;
-  background-color: var(--primary-bg);
+  background-color: var(--bg-primary);
 }
 
 .about-content {
@@ -283,14 +286,14 @@
 .about-content p {
   font-size: 1.1rem;
   line-height: 1.8;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--text-secondary);
   margin-bottom: 24px;
 }
 
 /* Footer */
 .footer {
-  background-color: var(--secondary-bg);
-  color: var(--text);
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
   padding: 60px 20px 30px;
   border-top: 2px solid var(--accent);
 }
@@ -309,11 +312,12 @@
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 10px;
+  color: var(--accent);
 }
 
 .footer-tagline {
   font-size: 1rem;
-  opacity: 0.8;
+  color: var(--text-secondary);
 }
 
 .footer-links {
@@ -325,21 +329,20 @@
 }
 
 .footer-link {
-  color: white;
+  color: var(--text-primary);
   text-decoration: none;
-  opacity: 0.8;
-  transition: opacity 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .footer-link:hover {
-  opacity: 1;
+  color: var(--accent);
 }
 
 .footer-copyright {
   text-align: center;
   padding-top: 30px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  opacity: 0.7;
+  border-top: 1px solid rgba(251, 192, 45, 0.3);
+  color: var(--text-secondary);
   font-size: 0.9rem;
 }
 

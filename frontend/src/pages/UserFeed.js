@@ -35,17 +35,18 @@ const UserFeed = () => {
       const token = localStorage.getItem("token");
 
       // decide which endpoint based on the tab
-      const endpoint = activeTab === "feed" 
-        ? "http://localhost:8080/api/user/feed"
-        : "http://localhost:8080/api/user/plans";
+      const endpoint =
+        activeTab === "feed"
+          ? "http://localhost:8080/api/user/feed"
+          : "http://localhost:8080/api/user/plans";
 
       const [plansResp, subsResp] = await Promise.all([
         fetch(endpoint, {
-          headers: { Authorization: `Bearer ${token}` }
+          headers: { Authorization: `Bearer ${token}` },
         }),
         fetch("http://localhost:8080/api/user/subscriptions", {
-          headers: { Authorization: `Bearer ${token}` }
-        })
+          headers: { Authorization: `Bearer ${token}` },
+        }),
       ]);
 
       const plansJson = await plansResp.json();
@@ -70,7 +71,7 @@ const UserFeed = () => {
     try {
       const token = localStorage.getItem("token");
       const resp = await fetch("http://localhost:8080/api/user/trainers", {
-        headers: { Authorization: `Bearer ${token}` }
+        headers: { Authorization: `Bearer ${token}` },
       });
 
       const json = await resp.json();
@@ -94,9 +95,11 @@ const UserFeed = () => {
     try {
       const token = localStorage.getItem("token");
       const resp = await fetch(
-        `http://localhost:8080/api/user/trainers/search?keyword=${encodeURIComponent(searchKeyword)}`,
+        `http://localhost:8080/api/user/trainers/search?keyword=${encodeURIComponent(
+          searchKeyword
+        )}`,
         {
-          headers: { Authorization: `Bearer ${token}` }
+          headers: { Authorization: `Bearer ${token}` },
         }
       );
 
@@ -116,7 +119,7 @@ const UserFeed = () => {
         `http://localhost:8080/api/user/trainers/follow/${trainerId}`,
         {
           method: "POST",
-          headers: { Authorization: `Bearer ${token}` }
+          headers: { Authorization: `Bearer ${token}` },
         }
       );
 
@@ -139,7 +142,7 @@ const UserFeed = () => {
         `http://localhost:8080/api/user/trainers/follow/${trainerId}`,
         {
           method: "DELETE",
-          headers: { Authorization: `Bearer ${token}` }
+          headers: { Authorization: `Bearer ${token}` },
         }
       );
 
@@ -314,7 +317,8 @@ const UserFeed = () => {
                     <div className="trainer-info">
                       <h3>{trainer.name}</h3>
                       <p className="trainer-specializations">
-                        <strong>Specializations:</strong> {trainer.specializations}
+                        <strong>Specializations:</strong>{" "}
+                        {trainer.specializations}
                       </p>
                       <p className="trainer-experience">
                         <strong>Experience:</strong> {trainer.experience} years
@@ -329,7 +333,9 @@ const UserFeed = () => {
                           ? unfollowTrainer(trainer.trainerId)
                           : followTrainer(trainer.trainerId)
                       }
-                      className={trainer.following ? "unfollow-btn" : "follow-btn"}
+                      className={
+                        trainer.following ? "unfollow-btn" : "follow-btn"
+                      }
                     >
                       {trainer.following ? "Unfollow" : "Follow"}
                     </button>

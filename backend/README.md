@@ -217,16 +217,16 @@ mvn test
 
 ## Security Notes
 
-- Passwords are hashed using SHA-256 (consider upgrading to BCrypt for production)
+- Passwords are hashed using SHA-256 (we can lkater on consider upgrading to BCrypt for production) 
 - CORS is configured to allow requests from `http://localhost:3000`
 - Input validation is enforced using Jakarta Validation annotations
-- Duplicate email detection prevents multiple accounts with same email
+- Duplicate email detection prevents multiple accounts with same email 
 
-## Future Enhancements
+## Future Enhancements that can be doneeeee
 
 - JWT authentication
 - BCrypt password hashing
 - Email verification
 - Password reset functionality
-- Role-based access control
+- Role based access control
 - Additional user/trainer profile endpoints

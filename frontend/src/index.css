@@ -1,11 +1,18 @@
 :root {
-  --primary-bg: #121212;
-  --secondary-bg: #2a2a2a;
-  --accent: #ff6a00;
-  --text: #ffffff;
-  --hover: #ff944d;
-  --error: #ff4444;
-  --success: #4caf50;
+  --bg-primary: #fff8e1;
+  --bg-secondary: #ffecb3;
+  --accent: #fbc02d;
+  --accent-hover: #f9a825;
+  --text-primary: #212121;
+  --text-secondary: #424242;
+  --error: #d32f2f;
+  --success: #388e3c;
+
+  /* Legacy support for existing class names */
+  --primary-bg: #fff8e1;
+  --secondary-bg: #ffecb3;
+  --text: #212121;
+  --hover: #f9a825;
 }
 
 * {
@@ -20,8 +27,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--primary-bg);
-  color: var(--text);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
 }
 
 code {

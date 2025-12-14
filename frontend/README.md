@@ -1,13 +1,13 @@
 # FitPlanHub Frontend
 
-React-based frontend for the FitPlanHub fitness platform.
+React and Springboot based frontend and backend for the FitPlanHub fitness platform.
 
 ## Features
 
 - **Landing Page**: Hero section, popular plans, features, about section, and footer
 - **Signup Flow**: User and Trainer registration with validation
-- **Responsive Design**: Mobile-friendly UI
-- **React Router**: Client-side routing
+- **Responsive Design**: Mobile friendly UI
+- **React Router**: Client side routing
 
 ## Tech Stack
 
@@ -47,7 +47,7 @@ frontend/
 
 ### Prerequisites
 
-- Node.js (v14 or higher)
+- Node.js 
 - npm or yarn
 
 ### Installation
@@ -74,7 +74,7 @@ frontend/
 
 ## API Configuration
 
-The frontend is configured to connect to the backend at `http://localhost:8080`.
+The frontend is configured to connectt to the backend att `http://localhost:8080`.
 
 To change this, update the API URLs in:
 
@@ -101,5 +101,5 @@ This creates an optimized production build in the `build` folder.
 ## Notes
 
 - Image placeholders are used throughout the app
-- Dashboards are placeholder pages (functionality to be implemented)
-- All styling is done with vanilla CSS (no external UI libraries)
+- Dashboards are placeholder pages 
+- All styling is done with vanilla CSS 

@@ -17,7 +17,9 @@ const LandingPage = () => {
   const loadPopularPlans = async () => {
     setIsLoadingPlans(true);
     try {
-      const resp = await fetch("http://localhost:8080/api/public/plans?limit=4");
+      const resp = await fetch(
+        "http://localhost:8080/api/public/plans?limit=4"
+      );
       const json = await resp.json();
 
       if (json.success && json.data) {
@@ -37,31 +39,33 @@ const LandingPage = () => {
       id: 1,
       title: "Certified Trainers",
       description: "Work with experienced and certified fitness professionals.",
-      icon: "🏋️"
+      icon: "🏋️",
     },
     {
       id: 2,
       title: "Personalized Fitness Plans",
       description: "Get customized workout plans tailored to your goals.",
-      icon: "📋"
+      icon: "📋",
     },
     {
       id: 3,
       title: "Secure Subscriptions",
-      description: "Safe and reliable payment processing for all subscriptions.",
-      icon: "🔒"
+      description:
+        "Safe and reliable payment processing for all subscriptions.",
+      icon: "🔒",
     },
     {
       id: 4,
       title: "Track Progress Easily",
-      description: "Monitor your fitness journey with comprehensive tracking tools.",
-      icon: "📊"
+      description:
+        "Monitor your fitness journey with comprehensive tracking tools.",
+      icon: "📊",
     },
     {
       id: 5,
       title: "Follow Your Favorite Trainers",
       description: "Stay connected with trainers who inspire and motivate you.",
-      icon: "⭐"
+      icon: "⭐",
     },
   ];
 
@@ -112,13 +116,19 @@ const LandingPage = () => {
       <section className="popular-plans-section">
         <div className="section-container">
           <h2 className="section-title">Popular Fitness Plans</h2>
-          
+
           {isLoadingPlans ? (
-            <p className="loading-text" style={{ textAlign: "center", color: "rgba(255, 255, 255, 0.7)" }}>
+            <p
+              className="loading-text"
+              style={{ textAlign: "center", color: "rgba(255, 255, 255, 0.7)" }}
+            >
               Loading plans...
             </p>
           ) : popularPlans.length === 0 ? (
-            <p className="empty-text" style={{ textAlign: "center", color: "rgba(255, 255, 255, 0.7)" }}>
+            <p
+              className="empty-text"
+              style={{ textAlign: "center", color: "rgba(255, 255, 255, 0.7)" }}
+            >
               No plans available at the moment. Check back soon!
             </p>
           ) : (
