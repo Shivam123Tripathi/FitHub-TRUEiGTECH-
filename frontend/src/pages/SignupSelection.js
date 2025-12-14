@@ -20,7 +20,7 @@ const SignupSelection = () => {
   return (
     <div className="signup-selection">
       <div className="selection-container">
-        <h1 className="selection-title">Join FitPlanHub</h1>
+        <h1 className="selection-title">Join Fit Tube</h1>
         <p className="selection-subtitle">Choose how you want to get started</p>
 
         <div className="selection-cards">

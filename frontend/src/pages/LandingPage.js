@@ -73,7 +73,7 @@ const LandingPage = () => {
       {/* Navigation Bar */}
       <nav className="navbar">
         <div className="navbar-container">
-          <h2 className="navbar-brand">FitPlanHub</h2>
+          <h2 className="navbar-brand">Fit Tube</h2>
           <button className="navbar-login-btn" onClick={handleLogin}>
             Login
           </button>
@@ -90,7 +90,7 @@ const LandingPage = () => {
               Transform Your Life
             </h1>
             <p className="hero-description">
-              Join FitPlanHub and discover personalized fitness plans from
+              Join Fit Tube and discover personalized fitness plans from
               certified trainers. Whether you're starting your fitness journey
               or pushing to the next level, we've got the perfect plan for you.
             </p>
@@ -141,7 +141,7 @@ const LandingPage = () => {
       {/* Features Section */}
       <section className="features-section">
         <div className="section-container">
-          <h2 className="section-title">Why Choose FitPlanHub?</h2>
+          <h2 className="section-title">Why Choose Fit Tube?</h2>
           <div className="features-grid">
             {features.map((feature) => (
               <div key={feature.id} className="feature-card">
@@ -157,10 +157,10 @@ const LandingPage = () => {
       {/* About Us Section */}
       <section className="about-section">
         <div className="section-container">
-          <h2 className="section-title">About FitPlanHub</h2>
+          <h2 className="section-title">About Fit Tube</h2>
           <div className="about-content">
             <p>
-              FitPlanHub is a comprehensive fitness platform that connects users
+              Fit Tube is a comprehensive fitness platform that connects users
               with certified trainers and personalized workout plans. Our
               mission is to make fitness accessible, enjoyable, and effective
               for everyone, regardless of their starting point.
@@ -170,7 +170,7 @@ const LandingPage = () => {
               ecosystem brings together experienced trainers who create tailored
               fitness plans and motivated users who are ready to transform their
               lives. Whether you're looking to lose weight, build muscle,
-              improve flexibility, or boost your overall health, FitPlanHub
+              improve flexibility, or boost your overall health, Fit Tube
               provides the tools, support, and community you need to succeed.
             </p>
             <p>
@@ -185,7 +185,7 @@ const LandingPage = () => {
       <footer className="footer">
         <div className="footer-container">
           <div className="footer-content">
-            <h3 className="footer-brand">FitPlanHub</h3>
+            <h3 className="footer-brand">Fit Tube</h3>
             <p className="footer-tagline">Your Fitness Journey Starts Here</p>
           </div>
           <div className="footer-links">
@@ -204,7 +204,7 @@ const LandingPage = () => {
           </div>
           <div className="footer-copyright">
             <p>
-              &copy; {new Date().getFullYear()} FitPlanHub. All rights reserved.
+              &copy; {new Date().getFullYear()} Fit Tube. All rights reserved.
             </p>
           </div>
         </div>

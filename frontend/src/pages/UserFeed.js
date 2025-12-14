@@ -186,7 +186,7 @@ const UserFeed = () => {
   return (
     <div className="user-feed">
       <nav className="feed-nav">
-        <h2>FitPlanHub</h2>
+        <h2>Fit Tube</h2>
         <div className="nav-right">
           <span className="user-greeting">Hi, {userName}</span>
           <button onClick={handleLogout} className="logout-btn">

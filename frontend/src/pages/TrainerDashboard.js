@@ -156,7 +156,7 @@ const TrainerDashboard = () => {
   return (
     <div className="trainer-dashboard">
       <nav className="dashboard-nav">
-        <h2>FitPlanHub Trainer</h2>
+        <h2>Fit Tube Trainer</h2>
         <button onClick={logout} className="logout-btn">
           Logout
         </button>
